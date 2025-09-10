@@ -42,32 +42,41 @@ i.e.: <a href="don't_translate_urls">PLEASE PRESERVE HTML TAGS</a>
 
 <p>The part that was scanned over, stretching from the first registered ancestor ARK to the end of the original string, comprises the suffix.</p>
 
-<div class="pre-block">
-<code>http://n2t.net/ark:/12345/x98765<span style="color: red;">/study92/location18/day96.xlsx</span></code><br/>
+<div class="pre-block" role="img"
+  aria-label="A diagram of an address formed from the ancestor ARK address and the appended suffix.
+     In this example the ancestor ARK is 'http://n2t.net/ark:/12345/x98765'
+     and the appended suffix is '/study92/location18/day96.xlsx">
+<code>http://n2t.net/ark:/12345/x98765<span style="color: #7B3271;">/study92/location18/day96.xlsx</span></code><br/>
 <code>\______________________________<em>/\</em>____________________________/</code><br/>
-<code>          ancestor ARK                      <span style="color: red;">suffix</span></code><br/>
+<code>          ancestor ARK                      <span style="color: #7B3271;">suffix</span></code><br/>
 </div>
 
 <p>Then it redirects the user's browser to the ancestor's target URL, appending the suffix that it scanned. So if the ancestor ARK's target was,</p>
 
-<div class="pre-block">
-<code>http://n2t.net/ark:/12345/x98765  --&gt;  <span style="color: blue;">http://datazoo.example.com/carbon288</span></code><br/>
+<div class="pre-block" role="img"
+  aria-label="A diagram of an address formed from the ancestor ARK transforming to ancestor ARK's target URL.
+     In this example the ancestor ARK is 'http://n2t.net/ark:/12345/x98765'
+     and the ancestor ARK's target URL is  'http://datazoo.example.com/carbon288'">
+<code>http://n2t.net/ark:/12345/x98765  --&gt;  <span style="color: #2F2CDD;">http://datazoo.example.com/carbon288</span></code><br/>
 <code>\______________________________<em>/     \_</em>_________________________________/</code><br/>
-<code>       ancestor ARK                          <span style="color: blue;">ancestor ARK's target URL</span></code><br/>
+<code>       ancestor ARK                          <span style="color: #2F2CDD">ancestor ARK's target URL</span></code><br/>
 </div>
 
 <p>the user would be (hypothetically) redirected to</p>
 
-<div class="pre-block">
-<code><span style="color: blue;">http://datazoo.example.com/carbon288</span><span style="color: red;">/study92/location18/day96.xlsx</span></code><br/>
-<code><span style="font-family: Arial , sans-serif;">\</span>__________________________________<em>/\</em>____________________________/</code><br/>
-<code>       <span style="color: blue;">ancestor's target URL</span>                    <span style="color: red;">suffix</span></code><br/>
+<div class="pre-block" role="img"
+  aria-label="A diagram of an ancestor's target URL and suffix that a user would be redirected to.
+In this example the ancestor's target URL is 'http://datazoo.example.com/carbon288'">
+     and the suffix is '/study92/location18/day96.xlsx'">
+<code><span style="color: #2F2CDD;">http://datazoo.example.com/carbon288</span><span style="color: #7B3271;">/study92/location18/day96.xlsx</span></code><br/>
+<code><span style="font-family: Arial , sans-serif">\</span>__________________________________<em>/\</em>____________________________/</code><br/>
+<code>       <span style="color: #2F2CDD;">ancestor's target URL</span>                    <span style="color: #7B3271;">suffix</span></code><br/>
 </div>
 
 <p>Note that SPT is only useful when the target server can respond to the suffixes it receives. For example, you would not instruct users how to add suffixes to the above ARK unless the target server was prepared to provide access to its 10,000 sub-objects. Fortunately, SPT is easy to illustrate in some cases, such as when the target server extends resource names with query strings or ordinary URL paths.</p>
 
 <div class="pre-block">
-<code><strong><em>Rule: if identifier A has target <span style="color: blue;">T</span>, suffix passthrough means the extended identifier A/<span style="color: red;">X</span> has target<span style="color: blue;">T</span>/<span style="color: red;">X</span></em></strong>.</code><br/>
+<code><strong><em>Rule: if identifier A has target <span style="color: #2F2CDD;">T</span>, suffix passthrough means the extended identifier A/<span style="color: #7B3271;">X</span> has target<span style="color: #2F2CDD;">T</span>/<span style="color: #7B3271;">X</span></em></strong>.</code><br/>
 </div>
 
 
@@ -78,27 +87,27 @@ i.e.: <a href="don't_translate_urls">PLEASE PRESERVE HTML TAGS</a>
 <h2 class="heading_2">Suffix Passthrough Examples</h2>
 
 <p>You can see SPT in action by clicking on the extended ARKs below. These are &quot;ARKs&quot; (for illustration purposes only, not long-term stable) that <em>
-are not</em> registered in the <a href="http://n2t.net" class="ext-link" rel="nofollow"><span style="color: blue;">N2T</span></a> resolver, but are formed by adding a <span style="color: red;">suffix</span> to an ARK that <em>is</em> registered.</p>
+are not</em> registered in the <a href="http://n2t.net" class="ext-link" rel="nofollow"><span style="color: #2F2CDD;">N2T</span></a> resolver, but are formed by adding a <span style="color: red;">suffix</span> to an ARK that <em>is</em> registered.</p>
 
 <p>Example 1. One registration standing in for several CDL service page &quot;ARKs&quot;.</p>
 <ul>
   <li>Registered: ark:/12345/fk1234</li>
-  <li>Its target URL: <a href="http://www.cdlib.org/services" class="external-link" rel="nofollow"><span style="color: blue;">http://www.cdlib.org/services</span></a></li>
-  <li>An extended ARK: <a href="http://n2t.net/ark:/12345/fk1234/uc3/ezid/" class="external-link" rel="nofollow"><span style="color: blue;">http://n2t.net/ark:/12345/fk1234</span><span style="color: red;">/uc3/ezid/</span></a></li>
+  <li>Its target URL: <a href="http://www.cdlib.org/services" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://www.cdlib.org/services</span></a></li>
+  <li>An extended ARK: <a href="http://n2t.net/ark:/12345/fk1234/uc3/ezid/" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://n2t.net/ark:/12345/fk1234</span><span style="color: #7B3271;">/uc3/ezid/</span></a></li>
 </ul>
 
 <p>Example 2. One registration standing in for any number of Wikipedia article &quot;ARKs&quot;.</p>
 <ul>
   <li>Registered: ark:/12345/fk1235</li>
-  <li>Its target URL: <a href="http://en.wikipedia.org/wiki" class="external-link" rel="nofollow"><span style="color: blue;">http://en.wikipedia.org/wiki</span></a></li>
-  <li>An extended ARK: <a href="http://n2t.net/ark:/12345/fk1235/Persistent_identifier" class="external-link" rel="nofollow"><span style="color: blue;">http://n2t.net/ark:/12345/fk1235</span><span style="color: red;">/Persistent_identifier</span></a></li>
+  <li>Its target URL: <a href="http://en.wikipedia.org/wiki" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://en.wikipedia.org/wiki</span></a></li>
+  <li>An extended ARK: <a href="http://n2t.net/ark:/12345/fk1235/Persistent_identifier" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://n2t.net/ark:/12345/fk1235</span><span style="color: #7B3271;">/Persistent_identifier</span></a></li>
 </ul>
 
 <p>Example 3. One registration standing in for any number of internet search &quot;ARKs&quot;.</p>
 <ul>
   <li>Registered: ark:/12345/fk3</li>
-  <li>Its target URL: <a href="http://www.google.com/#q=" class="external-link" rel="nofollow"><span style="color: blue;">http://www.google.com/#q=</span></a></li>
-  <li>Extended ARK: <a href="http://n2t.net/ark:/12345/fk3pqrst" class="external-link" rel="nofollow"><span style="color: blue;">http://n2t.net/ark:/12345/fk3</span><span style="color: red;">pqrst</span></a></li>
+  <li>Its target URL: <a href="http://www.google.com/#q=" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://www.google.com/#q=</span></a></li>
+  <li>Extended ARK: <a href="http://n2t.net/ark:/12345/fk3pqrst" class="external-link" rel="nofollow"><span style="color: #2F2CDD;">http://n2t.net/ark:/12345/fk3</span><span style="color: #7B3271;">pqrst</span></a></li>
 </ul>
 
 <p>You can experiment easily by pasting this registered ARK,</p>
