@@ -49,17 +49,19 @@
               forwarding information are maintained.</p>
 
           <h4 class="heading_3">Can DOIs and ARKs be used together?</h4>
-            <p>ARK identifiers have certain features that can be very useful for:<p>
+            <p>ARK identifiers have certain features that can be very useful for:</p>
             <ul>
               <li>Keeping track of many granules of a dataset (ARKs will be able to &quot;pass through&quot; a suffix, so many thousands of items can be referenced on the basis of a single registration);</li>
               <li>Keeping track of data before a decision has been made about whether or not it is going to be retained (ARKs can be deleted).</li>
             </ul>
             <p>This can make it attractive to use ARKs during the early part of a dataset&#39;s &quot;life&quot; or the early stages of the research process. Then, when the time comes to begin writing up results and it becomes clear which object(s) will be cited, it may appropriate to get DOIs for those objects.</p>
             <p>DOIs have the citation-level &quot;reputation&quot; and it is possible to use the ARK of the cited object as the &quot;suffix&quot; for the DOI so that there is a traceable connection between the two. Here is what that means:</p>
-            <p>Step 1. You assign an ARK to a resource for good management and tracking: ark:/99999/<span class="hl1">fk4sf2w65j</span></p>
-            <p>Step 2. You decide to cite the resource, so you want a DOI.</p>
-            <p>Step 3. Using either the Advanced Create UI or the API, request a doi with this form: doi:10.5072/<span class="hl1">FK2fk4sf2w65j</span></p>
-            <p>In this way, the two identifiers have a relationship, so the object can be tracked throughout its life cycle. With EZID, clients get access to both of these identifiers and can take best advantage of both approaches.<p>
+            <ul>
+              <li>Step 1. You assign an ARK to a resource for good management and tracking: ark:/99999/<span class="hl1">fk4sf2w65j</span></li>
+              <li>Step 2. You decide to cite the resource, so you want a DOI.</li>
+              <li>Step 3. Using either the Advanced Create UI or the API, request a doi with this form: doi:10.5072/<span class="hl1">FK2fk4sf2w65j</span></li>
+            </ul>
+            <p>In this way, the two identifiers have a relationship, so the object can be tracked throughout its life cycle. With EZID, clients get access to both of these identifiers and can take best advantage of both approaches.</p>
 
           <h4 class="heading_3">What is identifier resolution?</h4>
             <p>Instead of leading directly to an object, one
@@ -120,18 +122,22 @@
 
   <h3 class="heading_2">Technical Documentation</h3>
 
-  <p><a class="link__primary" href="/doc/apidoc.html">API Documentation</a></p>
-  <p><a class="link__primary" href="/doc/apidoc.html#oai-pmh-harvesting">OAI-PMH Service Documentation</a></p>
-  <p><a class="link__primary" href="/learn/id_basics">Identifier Basics</a></p>
-  <p><a class="link__primary" href="/learn/open_source">Open Source Software for EZID</a></p>
-  <p><a class="link__primary" href="/learn/suffix_passthrough">Suffix Passthrough Explained</a></p>
+  <ul>
+    <li><a class="link__primary" href="/doc/apidoc.html">API Documentation</a></li>
+    <li><a class="link__primary" href="/doc/apidoc.html#oai-pmh-harvesting">OAI-PMH Service Documentation</a></li>
+    <li><a class="link__primary" href="/learn/id_basics">Identifier Basics</a></li>
+    <li><a class="link__primary" href="/learn/open_source">Open Source Software for EZID</a></li>
+    <li><a class="link__primary" href="/learn/suffix_passthrough">Suffix Passthrough Explained</a></li>
+  </ul>
 
   <h3 class="heading_2">Status Information</h3>
 
   <p>For information about the status of the EZID system, please consider the following options:</p>
 
-  <p><a class="link__primary" href="/doc/apidoc.html#server-status">API inquiries<a></p	>
-  <p><a href="https://cdlib.org/contact/system-status/" class="ext-link">The CDL System Status Page</a></p>
-  <p><a href="http://ezidstatus.wordpress.com/" class="ext-link">The EZID Status Blog</a></p>
-  <p><a href="http://ezidstatus.wordpress.com/feed/" class="ext-link">The RSS Feed from the Status Blog</a></p>
+  <ul>
+    <li><a class="link__primary" href="/doc/apidoc.html#server-status">API inquiries</a></li>
+    <li><a href="https://cdlib.org/contact/system-status/" class="ext-link">The CDL System Status Page</a></li>
+    <li><a href="http://ezidstatus.wordpress.com/" class="ext-link">The EZID Status Blog</a></li>
+    <li><a href="http://ezidstatus.wordpress.com/feed/" class="ext-link">The RSS Feed from the Status Blog</a></li>
+  </ul>
 </div>
